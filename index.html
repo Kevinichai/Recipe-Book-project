@@ -13,28 +13,43 @@
 
 </head>
 <body>
-    <div class="container">
-<h1 class="title">Nipishe Nipike</h1>
+    <!--creation of headers section-->
+
+    <h1 class="title">Nipishe Nipike</h1>
+ <div class="container"
 <nav>
-<div id="navigationMenu">
-<a>Home</a>
-<a>Log In</a>
-<a>Contact Us</a>
-<a>Sign Up</a>
-</div>
+<a href="#">Home</a>
+<a href="#">Log In</a>
+<a href="#">Contact Us</a>
+<a href="#">Sign Up</a>
 </nav>
-    </div>
-<div  class=" mealSection">
+ </div>
+
+    <!--meals searching section i.e input field and search button-->
+
+<div  class=" mealSearcher">
 <form class="mealSectionWrapper" id="">
 <input type="text" id="input" placeholder="Insert required recipe i.e chicken">
 <button class="searchBtn" >
-    <i class="fas fa-search">
-    
-    </i>
+    <i class="fa-solid fa-magnifying-glass"></i>
 </button>
-
 </form>
-</div>       
+<button class="SelectBtn" id="SelectBtn">Nipike?</button>
+</div>  
+
+<!--display meals data--> 
+<div class="recipe-details" id="recipe-details">
+    <ul>
+        <!--Data from API populates this list-->
+    </ul>
+    <div class="mealContainer" id="mealContainer">
+        <img id="mealImage" src="" alt="Meal Image">
+        <h2 id="recipe-title"></h2>
+        <p id=" mealDetails"></p>
+      
+    
+    </div>
+</div>
 
 
 
