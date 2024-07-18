@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nipishe Nipike</title>
 
-    <!---linked css to html file-->
+    <!---linked css file-->
     <link rel="stylesheet" href="css/style.css">
 
     <!--Added link to fontawesome-->
@@ -13,11 +13,11 @@
 
 </head>
 <body>
-    <!--creation of headers section-->
-
-    <h1 class="title">Nipishe Nipike</h1>
- <div class="container"
-<nav>
+    <!--headers section-->
+<h1 class="title">Nipishe Nipike</h1>
+ <div class="container">
+ 
+ <nav>
 <a href="#">Home</a>
 <a href="#">Log In</a>
 <a href="#">Contact Us</a>
@@ -27,8 +27,8 @@
 
     <!--meals searching section i.e input field and search button-->
 
-<div  class=" mealSearcher">
-<form class="mealSectionWrapper" id="">
+<div  class="mealSearcher">
+<form class="mealInputWrapper">
 <input type="text" id="input" placeholder="Insert required recipe i.e chicken">
 <button class="searchBtn" >
     <i class="fa-solid fa-magnifying-glass"></i>
@@ -38,22 +38,16 @@
 </div>  
 
 <!--display meals data--> 
-<div class="recipe-details" id="recipe-details">
-    <ul>
-        <!--Data from API populates this list-->
-    </ul>
     <div class="mealContainer" id="mealContainer">
-        <img id="mealImage" src="" alt="Meal Image">
+        <img id="mealImage" src="" alt="">
         <h2 id="recipe-title"></h2>
-        <p id=" mealDetails"></p>
-      
+        <p id=" mealInstructions"></p>
     
     </div>
-</div>
 
 
 
 <!--linked script file-->
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
 </body>
 </html>
